@@ -9,16 +9,35 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 
-const questions = (state = [], action) => {
+// for user input form to capture userInfo
+const userInfo = (state = {}, action ) => {
     return state;
 }
-const question = (state = [], action) => {
+
+const questions = (state = {}, action) => {
+    return state;
+}
+const answers = (state = {}, action) => {
+    switch (action.type){
+        case 'ADD_Q1_ANSWER':
+            return {...state, answerOne: action.payload}
+        case 'ADD_Q2_ANSWER':
+            return {...state, answerTwo: action.payload}
+        case 'ADD_Q3_ANSWER':
+            return {...state, answerThree: action.payload}
+        case 'ADD_Q4_ANSWER':
+            return {...state, answerFour: action.payload}
+        case 'RESET':
+            return {};
+    }
     return state;
 }
 
 const storeInstance = createStore(
     combineReducers({
-        questions
+        questions,
+        answers,
+        userInfo
     }),
     applyMiddleware(logger)
 )
