@@ -28,7 +28,7 @@ function ThankYou (){
     const resetFeedback = () => {
         console.log('reset Feedback');
         dispatch({type: 'RESET'})
-        history.push('/1')
+        history.push('/')
     }
 
     return(
