@@ -7,6 +7,13 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 
+//import components
+import QuestionOne from '../Question1/Question1';
+import QuestionTwo from '../Question2/Question2';
+import QuestionThree from '../Question3/Question3';
+import QuestionFour from '../Question4/Question4';
+import ThankYou from '../ThankYou/ThankYou'
+
 function App() {
 
   return (
@@ -20,13 +27,19 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/Q1">Q1</Link>
+              <Link to="/">Q1</Link>
           </li>
             <li>
-              <Link to="/Q2">Q2</Link>
+              <Link to="/2">Q2</Link>
             </li>
             <li>
-              <Link to="/Q3">Q3</Link>
+              <Link to="/3">Q3</Link>
+            </li>
+            <li>
+              <Link to="/4">Comments</Link>
+            </li>
+            <li>
+              <Link to="/5">ThankYou</Link>
             </li>
             <li>
               <Link to="/Admin">Admin</Link>
@@ -36,19 +49,19 @@ function App() {
 
         {/* routes go here */}
         <Route exact path="/">
-          {/* <SelectYourPizza /> */}
+          <QuestionOne />
         </Route>
-        <Route exact path="/SelectYourPizza">
-          {/* <SelectYourPizza /> */}
+        <Route exact path="/2">
+          <QuestionTwo />
         </Route>
-
-        <Route exact path="/CustomerInfo">
-          {/* <CustomerInfo /> */}
+        <Route exact path="/3">
+          <QuestionThree />
         </Route>
-
-        {/* Detail Page or Detail View */}
-        <Route exact path="/Checkout">
-          {/* <Checkout /> */}
+        <Route exact path="/4">
+          <QuestionFour />
+        </Route>
+        <Route exact path="/5">
+          <ThankYou />
         </Route>
         <Route exact path="/Admin">
           {/* <Admin /> */}
