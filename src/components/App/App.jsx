@@ -12,7 +12,9 @@ import QuestionOne from '../Question1/Question1';
 import QuestionTwo from '../Question2/Question2';
 import QuestionThree from '../Question3/Question3';
 import QuestionFour from '../Question4/Question4';
-import ThankYou from '../ThankYou/ThankYou'
+import Review from '../ReviewFeedback/Review';
+import ThankYou from '../ThankYou/ThankYou';
+import Admin from '../Admin/Admin'
 
 function App() {
 
@@ -27,19 +29,22 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Q1</Link>
+              <Link to="/">Q1: Feeling</Link>
           </li>
             <li>
-              <Link to="/2">Q2</Link>
+              <Link to="/2">Q2: Understanding</Link>
             </li>
             <li>
-              <Link to="/3">Q3</Link>
+              <Link to="/3">Q3: Support</Link>
             </li>
             <li>
-              <Link to="/4">Comments</Link>
+              <Link to="/4">Q4: Comments</Link>
             </li>
             <li>
-              <Link to="/5">ThankYou</Link>
+              <Link to="/5">Review</Link>
+            </li>
+            <li>
+              <Link to="/6">Thank You</Link>
             </li>
             <li>
               <Link to="/Admin">Admin</Link>
@@ -61,10 +66,13 @@ function App() {
           <QuestionFour />
         </Route>
         <Route exact path="/5">
+          <Review />
+        </Route>
+        <Route exact path="/6">
           <ThankYou />
         </Route>
         <Route exact path="/Admin">
-          {/* <Admin /> */}
+          <Admin />
         </Route>
       </Router>
     </div>
