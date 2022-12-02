@@ -13,7 +13,15 @@ function ThankYou (){
         console.log(dataToSend);
         if (dataToSend.answerOne && dataToSend.answerTwo && dataToSend.answerThree && dataToSend.answerFour){
             console.log('Data prepared for database');
-            axios.post()
+
+            // post data to DB
+            axios.post('./answers', dataToSend)
+            .then(response => {
+                console.log('Post successful');
+            })
+            .catch( error => {
+                console.log('Failed to post feedback answers');
+            })
         }
     }, []);
 
