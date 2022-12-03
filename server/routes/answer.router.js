@@ -20,6 +20,7 @@ router.post('/', (req, res) => {
 
 router.get('/', (req, res) => {
     console.log('GET /answers');
+    // TODO: fetch by most recent row
     pool.query('SELECT * from "feedback";')
     .then((result) => {
         res.send(result.rows);

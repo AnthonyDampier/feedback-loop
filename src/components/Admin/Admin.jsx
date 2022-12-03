@@ -20,8 +20,11 @@ function ThankYou (){
         console.log('delete clicked');
         if (confirm('Are you sure you want delete this feedback!')){
             console.log('delete item');
+            // TODO: Make axios.delete path for item by id
         }
     }
+
+    // TODO: flag an item for further review
 
     return(
         <>
