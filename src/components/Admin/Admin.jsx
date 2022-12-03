@@ -17,11 +17,21 @@ function ThankYou (){
         fetchFeedback();
     }, []);
 
-    const handleDelete = () => {
+    const handleDelete = (id) => {
         console.log('delete clicked');
         if (confirm('Are you sure you want delete this feedback!')){
             console.log('delete item');
             // TODO: Make axios.delete path for item by id
+            console.log(id);
+            axios.delete('./answers/' + id)
+            .then((response) => {
+                console.log('Delete of ', id, 'from DB successful')
+                fetchFeedback();
+            })
+            .catch((error) => {
+                console.log('Error in handleDelete', error);
+                
+            })
         }
     }
 
@@ -38,7 +48,7 @@ function ThankYou (){
                             <td>{item.understanding}</td>
                             <td>{item.support}</td>
                             <td>{item.comments}</td>
-                            <td onClick={handleDelete}>🗑</td>
+                            <td onClick={() => handleDelete(item.id)}>🗑</td>
                         </tr>
                         )}
                         <tr></tr>

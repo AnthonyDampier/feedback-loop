@@ -35,7 +35,7 @@ function Review (){
     return(
         <div className="card">
             <h1>Review Your Feedback</h1>
-            <p>Feeling {answers.answerOne}</p>
+            <p>Feeling: {answers.answerOne}</p>
             <p>Understanding: {answers.answerTwo}</p>
             <p>Support: {answers.answerThree}</p>
             <p>Comments: {answers.answerFour}</p>
