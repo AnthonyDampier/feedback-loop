@@ -23,3 +23,62 @@ h4 {
 }
 
 /* TODO: styling class= 'Cards' & local styling on components */
+
+body {
+  height: 360px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 600px;
+  height: fit-content;
+  background-color: rgb(29, 187, 255);
+  padding: 30px;
+  padding-bottom: 40px;
+  border-radius: .5rem;
+  margin: auto;
+}
+
+.card input {
+  margin: 20px;
+  font-size: x-large;
+  width: 60px;
+  text-align: center;
+  border-radius: .5rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card button {
+  width: 70px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  font-size: xx-large;
+  display: flex;
+  margin-left: 245px;
+  text-decoration: underline;
+}
+
+.card button:hover {
+  font-weight: bold;
+  color:rgb(24, 59, 103);
+  transition: 0.7s;
+  text-decoration: underline;
+}
+
+.card button#complete {
+  font-size: x-large;
+  margin-left: 200px;
+  width: 300px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.card button#feedback {
+  font-size: x-large;
+  width: 300px;
+  margin-left: 175px;
+  text-decoration: underline;
+}

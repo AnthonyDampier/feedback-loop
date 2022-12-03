@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import axios from 'axios';
+import './Admin.css'
 
 function ThankYou (){
     const [feedback, setFeedback] = useState([]);
@@ -29,7 +30,7 @@ function ThankYou (){
     return(
         <>
             <table>
-                <thead><tr><td>Feeling</td><td>Comprehension</td><td>Support</td><td>Comments</td><td>Delete</td></tr></thead>
+                <thead><tr><th>Feeling</th><th>Comprehension</th><th>Support</th><th>Comments</th><th>Delete</th></tr></thead>
                 <tbody>
                     {feedback.map(item => 
                         <tr key={item.id}>
