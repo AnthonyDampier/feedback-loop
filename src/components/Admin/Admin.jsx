@@ -37,6 +37,7 @@ function ThankYou (){
                             <td onClick={handleDelete}>🗑</td>
                         </tr>
                         )}
+                        <tr></tr>
                 </tbody>
             </table>
         </>
