@@ -23,3 +23,14 @@ h4 {
 }
 
 /* TODO: styling class= 'Cards' & local styling on components */
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 80vw;
+  height: fit-content;
+  background-color: rgb(29, 187, 255);
+  margin: auto;
+  padding: 40px;
+  border-radius: .5rem;
+}

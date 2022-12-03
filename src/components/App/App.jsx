@@ -57,19 +57,19 @@ function App() {
           <QuestionOne />
         </Route>
         <Route exact path="/2">
-          <QuestionTwo />
+          <QuestionTwo/>
         </Route>
         <Route exact path="/3">
-          <QuestionThree />
+          <QuestionThree className="card"/>
         </Route>
         <Route exact path="/4">
-          <QuestionFour />
+          <QuestionFour className="card"/>
         </Route>
         <Route exact path="/5">
-          <Review />
+          <Review className="card"/>
         </Route>
         <Route exact path="/6">
-          <ThankYou />
+          <ThankYou className="card"/>
         </Route>
         <Route exact path="/Admin">
           <Admin />
