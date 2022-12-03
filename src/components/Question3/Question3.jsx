@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import {useState} from 'react';
 import {useHistory} from 'react-router-dom';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function questionThree(){
     const dispatch = useDispatch();
@@ -34,7 +35,7 @@ function questionThree(){
         <h1>How well are you being supported?</h1>
         <div>
             <div>
-                <h3>Support</h3>
+                {/* <h3>Support</h3> */}
                 <input 
                     type="number"
                     onChange={handleInputChange}
@@ -44,7 +45,7 @@ function questionThree(){
             <button 
             onClick={handleNextClick}
             >
-                Next
+            Next <ArrowForwardIcon fontSize='large'/>
             </button>
         </div>
     </div>

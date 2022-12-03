@@ -1,3 +1,4 @@
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useSelector, useDispatch } from "react-redux";
 import {useState} from 'react';
 import {useHistory} from 'react-router-dom';
@@ -34,18 +35,18 @@ function questionTwo(){
         <h1>How well are you understanding the content?</h1>
         <div>
             <div>
-                <h3>Understanding?</h3>
+                {/* <h3>Understanding?</h3> */}
                 <input 
                     type="number"
                     onChange={handleInputChange}
                     value={answer}
                 />
             </div>
-            <button 
-            onClick={handleNextClick}
-            >
-                Next
-            </button>
+                <button 
+                onClick={handleNextClick}
+                >
+                Next <ArrowForwardIcon fontSize='large'/>
+                </button>
         </div>
     </div>)
 }

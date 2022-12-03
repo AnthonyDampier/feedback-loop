@@ -1,3 +1,5 @@
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
 import { useSelector, useDispatch } from "react-redux";
 import {useState} from 'react';
 import {useHistory} from 'react-router-dom';
@@ -34,7 +36,7 @@ function questionOne(){
         <h1>How are you feeling today?</h1>
         <div>
             <div>
-                <h3>Feeling?</h3>
+                {/* <h3>Feeling?</h3> */}
                 <input 
                     type="number"
                     onChange={handleInputChange}
@@ -44,7 +46,7 @@ function questionOne(){
             <button 
             onClick={handleNextClick}
             >
-                Next
+                Next <ArrowForwardIcon fontSize='large'/>
             </button>
         </div>
     </div>
