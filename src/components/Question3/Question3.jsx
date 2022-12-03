@@ -29,7 +29,8 @@ function questionThree(){
         }
     }
 
-    return<>
+    return(
+    <div className="card">
         <h1>How well are you being supported?</h1>
         <div>
             <div>
@@ -46,7 +47,8 @@ function questionThree(){
                 Next
             </button>
         </div>
-    </>
+    </div>
+    )
 }
 
 export default questionThree;

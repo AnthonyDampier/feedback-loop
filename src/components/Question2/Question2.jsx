@@ -29,7 +29,8 @@ function questionTwo(){
         }
     }
 
-    return<>
+    return(
+    <div className="card">
         <h1>How well are you understanding the content?</h1>
         <div>
             <div>
@@ -46,7 +47,7 @@ function questionTwo(){
                 Next
             </button>
         </div>
-    </>
+    </div>)
 }
 
 export default questionTwo;

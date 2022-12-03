@@ -32,7 +32,8 @@ function questionFour(){
         }
     }
 
-    return<>
+    return(
+    <div className="card">
         <h1>How well are you being supported?</h1>
         <div>
             <div>
@@ -49,7 +50,8 @@ function questionFour(){
                 SUBMIT ✅
             </button>
         </div>
-    </>
+    </div>
+    )
 }
 
 export default questionFour;
