@@ -16,7 +16,9 @@ function ThankYou (){
     return(
         <div className="card">
             <h1>Thank You!!</h1>
-            <button onClick={resetFeedback}>Leave New Feedback</button>
+            <button onClick={resetFeedback} id='feedback' >
+                Leave New Feedback
+            </button>
         </div>
     )
 }

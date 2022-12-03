@@ -39,7 +39,9 @@ function Review (){
             <p>Understanding: {answers.answerTwo}</p>
             <p>Support: {answers.answerThree}</p>
             <p>Comments: {answers.answerFour}</p>
-            <button onClick={completeFeedback}>Leave New Feedback</button>
+            <button onClick={completeFeedback} id='complete'>
+                Submit Feedback
+            </button>
         </div>
     )
 }
