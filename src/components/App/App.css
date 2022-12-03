@@ -24,7 +24,7 @@ h4 {
 
 /* TODO: styling class= 'Cards' & local styling on components */
 
-body {
+div#body {
   height: 360px;
 }
 

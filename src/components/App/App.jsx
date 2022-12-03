@@ -53,7 +53,7 @@ function App() {
         </nav>
 
         {/* routes go here */}
-        <body>
+        <div id='body'>
           <Route exact path="/">
             <QuestionOne />
           </Route>
@@ -75,7 +75,7 @@ function App() {
           <Route exact path="/Admin">
             <Admin />
           </Route>
-          </body>
+          </div>
       </Router>
     </div>
   );
