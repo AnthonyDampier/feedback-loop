@@ -53,27 +53,29 @@ function App() {
         </nav>
 
         {/* routes go here */}
-        <Route exact path="/">
-          <QuestionOne />
-        </Route>
-        <Route exact path="/2">
-          <QuestionTwo/>
-        </Route>
-        <Route exact path="/3">
-          <QuestionThree className="card"/>
-        </Route>
-        <Route exact path="/4">
-          <QuestionFour className="card"/>
-        </Route>
-        <Route exact path="/5">
-          <Review className="card"/>
-        </Route>
-        <Route exact path="/6">
-          <ThankYou className="card"/>
-        </Route>
-        <Route exact path="/Admin">
-          <Admin />
-        </Route>
+        <body>
+          <Route exact path="/">
+            <QuestionOne />
+          </Route>
+          <Route exact path="/2">
+            <QuestionTwo/>
+          </Route>
+          <Route exact path="/3">
+            <QuestionThree className="card"/>
+          </Route>
+          <Route exact path="/4">
+            <QuestionFour className="card"/>
+          </Route>
+          <Route exact path="/5">
+            <Review className="card"/>
+          </Route>
+          <Route exact path="/6">
+            <ThankYou className="card"/>
+          </Route>
+          <Route exact path="/Admin">
+            <Admin />
+          </Route>
+          </body>
       </Router>
     </div>
   );
