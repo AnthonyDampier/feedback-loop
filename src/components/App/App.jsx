@@ -26,7 +26,7 @@ function App() {
       </header>
 
       <Router>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Q1: Feeling</Link>
@@ -50,7 +50,7 @@ function App() {
               <Link to="/Admin">Admin</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         {/* routes go here */}
         <div id='body'>
